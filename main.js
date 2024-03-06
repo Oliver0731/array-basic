@@ -28,11 +28,9 @@
 // console.log(msg);
 
 // //4.0
-
-function arrayInfo(anArray) {
-  anArray[3] += 2;
-  anArray[4] *= 0.5;
-  anArray.splice(1, 2);
-  console.log(anArray);
-}
 arrayInfo([2, 4, 6, 8, 10]);
+arrayInfo(["a", "b", "c", "d", "e", "f", "g"]);
+arrayInfo(["j", "k", 5, 6, 7, 8, 9, 3, 4, 5, "y", 7, 8, 8, 6, 6]);
+function arrayInfo(anArray) {
+  console.log(anArray[0], anArray[anArray.length - 1], anArray.length);
+}
